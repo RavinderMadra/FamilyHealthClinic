@@ -967,7 +967,6 @@
     <Content Include="Assets\images\4.jpg" />
     <Content Include="Assets\images\5.jpg" />
     <Content Include="Assets\images\6.jpg" />
-    <Content Include="Assets\images\bg.jpg" />
     <Content Include="Assets\images\bg2.jpg" />
     <Content Include="Assets\images\c-arrows.png" />
     <Content Include="Assets\images\customImage\BloodDonation.jpeg" />
@@ -1018,9 +1017,9 @@
     <Content Include="Assets\js\responsiveslides.min.js" />
     <Content Include="Assets\js\smoothbox.jquery2.js" />
     <Content Include="Assets\js\wickedpicker.js" />
-    <Content Include="Assets\video\food.JPG" />
-    <Content Include="Assets\video\food.mp4" />
-    <Content Include="Assets\video\food.png" />
+    <Content Include="Assets\js\video\food.JPG" />
+    <Content Include="Assets\js\video\food.mp4" />
+    <Content Include="Assets\js\video\food.png" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\PatientAppointment.js" />
     <Content Include="favicon.ico" />
