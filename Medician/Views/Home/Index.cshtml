@@ -1,0 +1,684 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    Layout = null;
+}
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Family Health Clinic</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Glorious Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript">
+         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+        function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--// Meta tag Keywords -->
+    <!-- css files -->
+    <link href="~/Assets/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /> <!-- Bootstrap-Core-CSS -->
+    <link href="~/Assets/css/style.css" rel="stylesheet" type="text/css" media="all" /> <!-- Style-CSS -->
+    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+    @*<link rel="stylesheet" href="~/Assets/css/font-awesome.css">*@ <!-- Font-Awesome-Icons-CSS -->
+    <link rel="stylesheet" href="~/Assets/css/flexslider.css" type="text/css" media="screen" property="" /> <!-- Flexslider-CSS -->
+    <link rel="stylesheet" href="~/Assets/css/team.css" type="text/css" media="screen" property="" /> <!-- Team-CSS -->
+    <link rel="stylesheet" href="~/Assets/css/smoothbox.css" type='text/css' media="all" /> <!-- Smoothbox-CSS -->
+    <link href="~/Assets/css/wickedpicker.css" rel="stylesheet" type='text/css' media="all" /> <!-- Time-script-CSS -->
+    <!-- //css files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Oleo+Script:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <!-- //online-fonts -->
+    <!--Custom JavaScript -->
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- banner -->
+    <div  style="background-image: url(/assets/images/customimage/homepage-banner1.jpg);">
+        <div class="center-container">
+            <div class="banner wthree">
+                <div class="container">
+                    <div class="banner_top">
+                        <div class="col-md-6 col-sm-4 col-xs-4 logo">
+                            <h1><a href="#">Family Health Clinic<span></span> </a></h1>
+                        </div>
+                        <div class="col-md-6 col-sm-8 col-xs-8 w3_menu">
+                            <div class="col-md-6 col-sm-5 col-xs-5 top-nav-text">
+                                @*<a class="page-scroll" href="#myModal2" data-toggle="modal" data-hover="LOGIN">
+                                        LOGIN
+                                    </a>*@
+
+
+                                <a href="@Url.Action("Login", "Account")">
+                                    <span class="fa fa-sign-out" aria-hidden="true"></span>Login
+                                </a>
+                            </div>
+
+                            <div class="mobile-nav-button">
+                                <div class="mobile-nav-button__line"></div>
+                                <div class="mobile-nav-button__line"></div>
+                                <div class="mobile-nav-button__line"></div>
+                            </div>
+                            <nav class="mobile-menu">
+                                <ul>
+                                    <li class="active"><a href="index.html">Home</a></li>
+                                    <li><a href="#services" class="scroll">Our Services</a></li>
+                                    <li><a href="#team" class="scroll">Our Team</a></li>
+                                    @*<li><a href="#menu" class="scroll">Menu</a></li>*@
+                                    <li><a href="#gallery" class="scroll">Gallery</a></li>
+                                    <li><a href="#contact" class="scroll">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="clearfix"> </div>
+                    </div>
+                    <!--Slider-->
+                    <div class="col-md-7 callbacks_container">
+                        <ul class="rslides" id="slider3">
+                            <li>
+                                <div class="slider-info">
+                                    <h3><span style="font-size:50px;">Thank You For Your Trust In Us.</span> </h3>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="slider-info">
+                                    <h3><span style="font-size:50px;">A Passion For Quality Care</span></h3>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="slider-info">
+                                    <h3><span style="font-size:50px;"> The Health Of All Visitors</span> </h3>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //Slider -->
+                    <!-- form -->
+                    <div class="col-md-5 callbacks_container form-w3l-agil3">
+                        <div class="book-form">
+                            <p>Book a Appointment</p>
+
+                            <div class="form-time-w3layouts">
+                                @*/patient detail//*@
+                                <div class="form-group">
+                                    <label for="">Date of Appointment</label>
+                                    <input type="text" class="form-control" id="txtAppointmentDate" placeholder="Date Of Appointment" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="Address">Appoint Time</label>
+                                    <select class="form-control" id="txtAppointTime">
+                                        <option value="0">Select Appointment Date</option>
+
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Problem">Problem</label>
+                                    <input type="text" class="form-control" id="txtProblem" placeholder="Problem" />
+                                </div>
+                                @*/personel detail//*@
+                                <div class="form-group">
+                                    <label for="Name">Name</label>
+                                    <input type="text" class="form-control" id="txtName" placeholder="Name" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="DOB">DOB</label>
+                                    <input type="text" class="form-control" id="txtDob" placeholder="Date Of Birth" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="Address">Gender</label>
+                                    <select class="form-control" id="txtGender">
+                                        <option value="0">Select Gender</option>
+                                        <option value="1">Male</option>
+                                        <option value="2">Female</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Address">Address</label>
+                                    <input type="text" class="form-control" id="txtAddress" placeholder="Address" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="Address">Email</label>
+                                    <input type="text" class="form-control" id="txtEmail" placeholder="Email" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="Address">Phone</label>
+                                    <input type="text" class="form-control" id="txtPhone" placeholder="Phone" />
+                                </div>
+                                <div id="errspan" class="alert alert-danger display-hide" role="alert">
+                                    This is a success alert—check it out!
+                                </div>
+                            </div>
+
+                            <div class="form-left-agileits-submit">
+                                <button type="button" class="booking-appointment" id="btnAdd1">Book a Appointment</button>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="clearfix"> </div>
+                    <!-- //form -->
+                </div>
+            </div>
+            <!-- modal -->
+            <!-- //modal -->
+            <!-- modal -->
+            <div class="modal about-modal w3-agileits fade" id="myModal3" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body login-page ">
+                            <!-- login-page -->
+                            <div class="login-top sign-top">
+                                <div class="agileits-login">
+                                    <h5>Register Here</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- //login-page -->
+                </div>
+            </div>
+            <!-- //modal -->
+        </div>
+    </div>
+    <!-- //banner -->
+    <!-- grids -->
+    <div class="about-agile">
+        <div class="col-md-6 about-grids-w3l">
+            <div class="about-first-w3">
+                <div class="col-md-4 col-sm-4 col-xs-4 welcome-img">
+                    <img src="~/Assets/images/customImage/clinicimage/clinicimage.jpg" class="img-responsive zoom-img" alt="" />
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 welcome-img">
+                    <img src="~/Assets/images/customImage/clinicimage/clinicimages1.jpg" class="img-responsive zoom-img" alt="" />
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 welcome-img">
+                    <img src="~/Assets/images/customImage/clinicimage/clinicimages4.jpg" class="img-responsive zoom-img" alt="" />
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="about-first-w3">
+                <div class="col-md-4 col-sm-4 col-xs-4 welcome-img">
+                    <img src="~/Assets/images/customImage/clinicimage/clinicimage2.jpg" class="img-responsive zoom-img" alt="" />
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 welcome-img">
+                    <img src="~/Assets/images/customImage/clinicimage/clinicimages5.jpg" class="img-responsive zoom-img" alt="" />
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4 welcome-img">
+                    <img src="~/Assets/images/customImage/clinicimage/clinicimage6.jpg" class="img-responsive zoom-img" alt="" />
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <div class="col-md-6 w3layouts_event_right">
+            <h3>About Family Health Clinic</h3>
+            <div class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <div class="w3_event_right_grid">
+                                <div class="w3layouts_event_right_para">
+                                    <p>
+                                        Family Health Clinic play a key role in improving the health of People
+                                        by providing access to quality  services for around 75,000 patients each year, across a wide range of medical specialties.
+                                        Our qualified Family Physicians, Family Dentists and Physiotherapists provide personalized care for you and your family.
+                                        With Doctors, Medicines, Lab Tests and Vaccines under one roof, we take care of all your day-to-day healthcare needs.﻿
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clearfix"> </div>
+    </div>
+    <!-- //grids -->
+    <!-- services -->
+    <div class="services" id="services">
+        <div class="container">
+            <div class="agile-heading">
+                <h3 class="w3l-title">Our Services</h3>
+            </div>
+            <div class="wthree-services-grids">
+                <div class="col-sm-3 wthree-services">
+                    <div class="wthree-services-grid">
+                        <div class="wthree-services-info">
+                            <i class="fa fa-user-md fa-3x" aria-hidden="true"></i>
+                            <h4>Family Physician</h4>
+                            <div class="w3ls-border"> </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-3 wthree-services">
+                    <div class="wthree-services-grid">
+                        <div class="wthree-services-info">
+                            <i class="fa fa-tooth fa-3x" aria-hidden="true"></i>
+                            <h4>Family Dentist </h4>
+                            <div class="w3ls-border"> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 wthree-services">
+                    <div class="wthree-services-grid">
+                        <div class="wthree-services-info">
+                            <i class="fa fa-syringe fa-3x" aria-hidden="true"></i>
+                            <h4>Vaccination </h4>
+                            <div class="w3ls-border"> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 wthree-services">
+                    <div class="wthree-services-grid">
+                        <div class="wthree-services-info">
+                            <i class="fa fa-briefcase-medical fa-3x" aria-hidden="true"></i>
+                            <h4>Physician Home Visit </h4>
+                            <div class="w3ls-border"> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="wthree-services-grids services-grids1">
+                <div class="col-sm-3 wthree-services">
+                    <div class="wthree-services-grid">
+                        <div class="wthree-services-info">
+                            <i class="fa fa-flask fa-3x" aria-hidden="true"></i>
+                            <h4>Lab Services</h4>
+                            <div class="w3ls-border"> </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-3 wthree-services">
+                    <div class="wthree-services-grid">
+                        <div class="wthree-services-info">
+                            <i class="fa fa-ambulance fa-3x" aria-hidden="true"></i>
+                            <h4>24HR EMERGENCY  </h4>
+                            <div class="w3ls-border"> </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-3 wthree-services">
+                    <div class="wthree-services-grid">
+                        <div class="wthree-services-info">
+                            <i class="fa fa-procedures fa-3x" aria-hidden="true"></i>
+                            <h4>Medical Procedures </h4>
+                            <div class="w3ls-border"> </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-sm-3 wthree-services">
+                    <div class="wthree-services-grid">
+                        <div class="wthree-services-info">
+                            <i class="fa fa-notes-medical fa-3x" aria-hidden="true"></i>
+                            <h4>Annual Health Checkup</h4>
+                            <div class="w3ls-border"> </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //services -->
+    <!-- team -->
+    <div class="team" id="team">
+        <div class="container">
+            <div class="menu-w3l" id="menu">
+                <h3 class="w3l-title">Our Team</h3>
+                <ul id="flexiselDemo1">
+                    <li>
+                        <div class="w3layouts_banner_bottom_left">
+                            <img src="~/Assets/images/customImage/chidspecialist.jpg" alt=" " class="img-responsive" />
+                            <h4>DR &nbsp; JAIN <span></span></h4>
+                            <h4>Child Specialist</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="w3layouts_banner_bottom_left">
+                            <img src="~/Assets/images/customImage/eyesspecialist.jpg" alt=" " class="img-responsive" />
+                            <h4>DR &nbsp; ANNITA<span></span></h4>
+                            <h4>Eyes Specialist</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="w3layouts_banner_bottom_left">
+                            <img src="~/Assets/images/customImage/physiotherphist.jpg" alt=" " class="img-responsive" />
+                            <h4>DR &nbsp; DAVID <span></span></h4>
+                            <h4>Physiotherapist</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="w3layouts_banner_bottom_left">
+                            <img src="~/Assets/images/customImage/dentist.jpg" alt=" " class="img-responsive" />
+                            <h4>DR &nbsp; ANGLINA<span></span></h4>
+                            <h4>Dentist</h4>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="w3layouts_banner_bottom_left">
+                            <img src="~/Assets/images/customImage/medicalconsulted.jpg" alt=" " class="img-responsive" />
+                            <h4>DR &nbsp; ANNA<span></span></h4>
+                            <h4>Medical Consultant</h4>
+                        </div>
+                    </li>
+                </ul>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //team -->
+    
+   
+    <!-- delicious-food -->
+    <div class="delicious_food" id="gallery">
+        <div class="container">
+            <h3 class="w3l-title">Gallery</h3>
+            <div class="agile_delicious_food_grids">
+                <div class="agile_delicious_food_grid">
+                    <a class="sb" href="~/Assets/images/customImage/BloodDonation1.jpg" title="A Voluntary blood donation camp is being organized on Jan 2018.">
+                        <div class="view view-sixth">
+                            <img src="~/Assets/images/customImage/BloodDonation1.jpg" alt=" " class="img-responsive" />
+                            <div class="mask">
+                                <h4>BLOOD DONATION CAMP</h4>
+                                <p>A Voluntary blood donation camp is being organized on Jan 2018.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="agile_delicious_food_grid">
+                    <a class="sb" href="~/Assets/images/customImage/firstAidcamp1.jpg" title="Medic First holds First Aid Summer Camp for kids.">
+                        <div class="view view-sixth">
+                            <img src="~/Assets/images/customImage/firstAidcamp1.jpg" alt=" " class="img-responsive" />
+                            <div class="mask">
+                                <h4>FIRST AID CAMP</h4>
+                                <p>Medic First holds First Aid Summer Camp for kids.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="agile_delicious_food_grid">
+                    <a class="sb" href="~/Assets/images/customImage/cancercamp1.jpg" title="We organized free Early Cancer Camp on July 2018.">
+                        <div class="view view-sixth">
+                            <img src="~/Assets/images/customImage/cancercamp1.jpg" alt=" " class="img-responsive" />
+                            <div class="mask">
+                                <h4>CENCER CAMP</h4>
+                                <p>We organized free Early Cancer Camp on July 2018.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="agile_delicious_food_grid">
+                    <a class="sb" href="~/Assets/images/customImage/medicalcheckup1.jpg" title="Free medical check-up camp held in August 2017..">
+                        <div class="view view-sixth">
+                            <img src="~/Assets/images/customImage/medicalcheckup1.jpg" alt=" " class="img-responsive" />
+                            <div class="mask">
+                                <h4>MEDICAL CHECK-UP CAMP</h4>
+                                <p>Free medical check-up camp held in August 2017.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="agile_delicious_food_grid">
+                    <a class="sb" href="~/Assets/images/customImage/dentalseminar.jpg" title="Orgnised the seminar to aware people how to make tooth healthy.">
+                        <div class="view view-sixth">
+                            <img src="~/Assets/images/customImage/dentalseminar.jpg" alt=" " class="img-responsive" />
+                            <div class="mask">
+                                <h4>DENTAL SEMINAR</h4>
+                                <p>Orgnised the seminar to aware people how to make tooth healthy.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="agile_delicious_food_grid">
+                    <a class="sb" href="~/Assets/images/customImage/freemedicines1.jpg" title="quis nostrud exercitation ullamco laboris quis autem vel eum iure reprehenderit qui in ea voluptate.">
+                        <div class="view view-sixth">
+                            <img src="~/Assets/images/customImage/freemedicines1.jpg" alt=" " class="img-responsive" />
+                            <div class="mask">
+                                <h4>Free Medicines Camp</h4>
+                                <p>Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <!-- //delicious-food -->
+    <!-- footer -->
+    <div class="footer" id="contact">
+        <div class="container">
+            <div class="agile-footer-grids">
+                <div class="col-md-6 col-sm-6 col-xs-6 w3-agile-footer-grid">
+                    <div class="logo-2">
+                        <h2><a href="index.html">Family Health Clinic<span></span></a></h2>
+                    </div>
+                    <ul>
+                       
+                        <li>28 Maitland stBD 2 Mars,</li>
+                        <li>city center</li>
+                        <li>Dunedin</li>
+                        <li><a href="#">ravinderkmadara@gmail.com</a></li>
+                        <li>Phone Number</li>
+                        <li>+123 456</li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 w3-agile-footer-grid">
+                    <h3>Opening Days</h3>
+                    <div class="col-md-5 col-sm-5 col-xs-5 agile-opening">
+                        <ul>
+                            <li>Monday-Friday </li>                            
+                            <li>Saturday-Sunday </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6 agile-opening">
+                        <ul>
+                            <li>8am-10pm</li>
+                            <li>9am-3pm</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>
+                @*<div class="col-md-6 w3-agile-footer-grid grid-w3-1">
+                    <div class="contact-block-left">
+
+                        <input type="text" placeholder="Name" name="Name" required="">
+                            <input type="email" class="email" placeholder="Email" name="Email" required="">
+                            <textarea placeholder="Message" name="message" required=""></textarea>
+                            <input type="submit" value="Send" />
+
+                    </div>
+                    <div class="clearfix"> </div>
+                </div>*@
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="copyright">
+            <p>© 2018 Family Health Clinic . All Rights Reserved | Design by <a href="http://ravindermadra.com/"> RavinderMadara</a> </p>
+        </div>
+        <!-- //copyright -->
+    </div>
+    <!-- //footer -->
+    <!-- js-scripts -->
+    <!-- js -->
+    <script type="text/javascript" src="../../Assets/js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="../../Assets/js/bootstrap.js"></script> <!-- Necessary-JavaScript-File-For-Bootstrap -->
+    <!-- //js -->
+    <!-- responsiveslider -->
+    <script src="../../Assets/js/responsiveslides.min.js"></script>
+    <script>
+        // You can also use "$(window).load(function() {"
+        $(function () {
+            // Slideshow 4
+            $("#slider3").responsiveSlides({
+                auto: true,
+                pager: true,
+                nav: false,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+
+        });
+    </script>
+    <!-- //responsiveslider -->
+    <!-- menu -->
+    <script>
+        $(document).ready(function () {
+            $('.mobile-nav-button').on('click', function () {
+                $(".mobile-nav-button .mobile-nav-button__line:nth-of-type(1)").toggleClass("mobile-nav-button__line--1");
+                $(".mobile-nav-button .mobile-nav-button__line:nth-of-type(2)").toggleClass("mobile-nav-button__line--2");
+                $(".mobile-nav-button .mobile-nav-button__line:nth-of-type(3)").toggleClass("mobile-nav-button__line--3");
+
+                $('.mobile-menu').toggleClass('mobile-menu--open');
+                return false;
+            });
+        });
+    </script>
+    <!-- //menu -->
+    <!-- flexSlider-for-grids-section -->
+    <script defer src="../../Assets/js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+    <!-- //flexSlider-for-grids-section -->
+    <!-- flexSlider-for-menu-section -->
+    <script type="text/javascript">
+        $(window).load(function () {
+            $("#flexiselDemo1").flexisel({
+                visibleItems: 4,
+                animationSpeed: 1000,
+                autoPlay: true,
+                autoPlaySpeed: 3000,
+                pauseOnHover: true,
+                enableResponsiveBreakpoints: true,
+                responsiveBreakpoints: {
+                    portrait: {
+                        changePoint: 480,
+                        visibleItems: 2
+                    },
+                    landscape: {
+                        changePoint: 640,
+                        visibleItems: 3
+                    },
+                    tablet: {
+                        changePoint: 768,
+                        visibleItems: 4
+                    }
+                }
+            });
+
+        });
+    </script>
+    <script type="text/javascript" src="../../Assets/js/jquery.flexisel.js"></script>
+    <!-- //flexSlider-for-menu-section -->
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="../../Assets/js/move-top.js"></script>
+    <script type="text/javascript" src="../../Assets/js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <!-- start-smoth-scrolling -->
+    <!-- for-bottom-to-top smooth scrolling -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*
+                var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+                };
+            */
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    </script>
+    <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    <!-- //for-bottom-to-top smooth scrolling -->
+    <!-- Calendar -->
+    <link rel="stylesheet" href="~/Assets/css/jquery-ui.css" />
+    <script src="../../Assets/js/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#datepicker,#datepicker1,#datepicker2,#datepicker3,#txtDob,#txtAppointmentDate").datepicker(
+                { dateFormat: 'dd-mm-yy' });
+
+        });
+        var array = ["18-01-2019", "22-01-2019", "19-01-2019"]
+
+        $("#txtAppointmentDate").datepicker({
+            beforeShowDay: function (date) {
+                var string = jQuery.datepicker.formatDate('dd-mm-yy', date);
+                return [array.indexOf(string) == -1]
+            }
+        });
+    </script>
+    <!-- //Calendar -->
+    <!-- video-js -->
+    <script src="../../Assets/js/jquery.vide.min.js"></script>
+    <!-- //video-js -->
+    <!-- smoothbox -->
+    <script type="text/javascript" src="../../Assets/js/smoothbox.jquery2.js"></script>
+    <!-- //smoothbox -->
+    <!-- Time -->
+    <script type="text/javascript" src="../../Assets/js/wickedpicker.js"></script>
+    <script src="../../Content/PatientAppointment.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        $('.timepicker').wickedpicker({ twentyFour: false });
+        $("#btnAdd1").click(function () {
+            Add();
+        });
+        $("#txtAppointmentDate").change(function () {
+            GetAvailableAppointment();
+        });
+
+    </script>
+    <!-- //Time -->
+    <!-- //js-scripts -->
+</body>
+</html>
