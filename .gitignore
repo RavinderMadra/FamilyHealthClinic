@@ -4,3 +4,13 @@
 
 /Utility/bin/Debug
 /.vs
+/DemoCore/obj
+/DemoCore/bin
+/Utility/obj/Debug
+/DemoService/obj
+/DemoService/bin/Release
+/DemoService/bin/Debug
+/DemoModel/bin
+/DemoModel/obj/Debug
+/DemoModel/obj/Release
+/DemoCore/.vs/Demo.Core/v15
