@@ -955,6 +955,7 @@
     <Content Include="Assets\images\customImage\clinicimage\clinicimages1.jpg" />
     <Content Include="Assets\images\customImage\clinicimage\clinicimages4.jpg" />
     <Content Include="Assets\images\customImage\clinicimage\clinicimages5.jpg" />
+    <Content Include="Assets\images\customImage\clinicimage\pagebackground.jpg" />
     <Content Include="Assets\images\customImage\firstAidcamp1.jpg" />
     <Content Include="Assets\images\customImage\freemedicines.jpg" />
     <Content Include="Assets\images\customImage\freemedicines1.jpg" />
@@ -1018,7 +1019,6 @@
     <Content Include="Assets\js\smoothbox.jquery2.js" />
     <Content Include="Assets\js\wickedpicker.js" />
     <Content Include="Assets\js\video\food.JPG" />
-    <Content Include="Assets\js\video\food.mp4" />
     <Content Include="Assets\js\video\food.png" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\PatientAppointment.js" />
@@ -1643,7 +1643,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>52784</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:52784/</IISUrl>
+          <IISUrl>http://localhost:52787/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

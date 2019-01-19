@@ -46,7 +46,7 @@ function Add() {
         isError = true; ErrorMessage = ErrorMessage + '&nbsp&nbsp  enter valid phone </br>'
     } 
     if (!isError) {
-        debugger;
+       
         var pdtObj = {
             Id: 0,
             AppointmentDate: $('#txtAppointmentDate').val(),
@@ -60,7 +60,7 @@ function Add() {
             Name: $('#txtName').val(),
             AppointmentTimeName: $("#txtAppointTime option:selected").text()
         };
-        debugger;
+       
         $.ajax({
             url: "../../Home/SaveAppointment",
             data: JSON.stringify(pdtObj),
@@ -99,7 +99,7 @@ function Add() {
             $("#txtAppointTime").append($("<option/>").val(0).text("select time")),
             $('#txtProblem').val(''),
             $('#txtDob').val(''),
-            $("#txtGender Option:selected").val(0),
+            $('#txtGender').val('0').prop('selected', true),
             $('#txtAddress').val(''),
             $('#txtEmail').val(''),
             $('#txtPhone').val(''),
@@ -109,7 +109,7 @@ function Add() {
 function GetAvailableAppointment() 
     {
     if ($('#txtAppointmentDate').val() != null && $('#txtAppointmentDate').val() != '') {
-        debugger
+        
         var date = $('#txtAppointmentDate').val();
         $("#txtAppointTime").html("");
         $("#txtAppointTime").append($("<option/>").val(0).text("select time"));

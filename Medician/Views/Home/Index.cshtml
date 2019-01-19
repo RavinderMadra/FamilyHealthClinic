@@ -41,7 +41,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 <body>
     <!-- banner -->
-    <div  style="background-image: url(/assets/images/customimage/homepage-banner1.jpg);">
+    <div id="Index" style="background-image: url(/assets/images/customimage/clinicimage/pagebackground.jpg);" >
         <div class="center-container">
             <div class="banner wthree">
                 <div class="container">
@@ -51,14 +51,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                         </div>
                         <div class="col-md-6 col-sm-8 col-xs-8 w3_menu">
                             <div class="col-md-6 col-sm-5 col-xs-5 top-nav-text">
-                                @*<a class="page-scroll" href="#myModal2" data-toggle="modal" data-hover="LOGIN">
-                                        LOGIN
-                                    </a>*@
-
-
-                                <a href="@Url.Action("Login", "Account")">
-                                    <span class="fa fa-sign-out" aria-hidden="true"></span>Login
-                                </a>
+                                @*<a href="@Url.Action("Login", "Account")">
+                                    <i class="fa fa-sign-in-alt" aria-hidden="true"></i> Admin Login
+                                </a>*@
                             </div>
 
                             <div class="mobile-nav-button">
@@ -68,7 +63,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             </div>
                             <nav class="mobile-menu">
                                 <ul>
-                                    <li class="active"><a href="index.html">Home</a></li>
+                                    <li class="active"><a href="#Index">Home</a></li>
                                     <li><a href="#services" class="scroll">Our Services</a></li>
                                     <li><a href="#team" class="scroll">Our Team</a></li>
                                     @*<li><a href="#menu" class="scroll">Menu</a></li>*@
@@ -135,7 +130,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <div class="form-group">
                                     <label for="Address">Gender</label>
                                     <select class="form-control" id="txtGender">
-                                        <option value="0">Select Gender</option>
+                                        <option value="0" selected="selected">Select Gender</option>
                                         <option value="1">Male</option>
                                         <option value="2">Female</option>
                                     </select>
@@ -476,54 +471,77 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="agile-footer-grids">
                 <div class="col-md-6 col-sm-6 col-xs-6 w3-agile-footer-grid">
                     <div class="logo-2">
-                        <h2><a href="index.html">Family Health Clinic<span></span></a></h2>
+                        <h2><a href="#">Family Health Clinic<span></span></a></h2>
                     </div>
                     <ul>
-                       
-                        <li>28 Maitland stBD 2 Mars,</li>
+
+                        <li>28 Maitland st,</li>
                         <li>city center</li>
                         <li>Dunedin</li>
-                        <li><a href="#">ravinderkmadara@gmail.com</a></li>
-                        <li>Phone Number</li>
-                        <li>+123 456</li>
+                        <li>Email: <a href="#">ravinderkmadara@gmail.com</a></li>
+                        <li>Phone Number: +123 456</li>
+                        <li></li>
                     </ul>
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-6 w3-agile-footer-grid">
-                    <h3>Opening Days</h3>
-                    <div class="col-md-5 col-sm-5 col-xs-5 agile-opening">
-                        <ul>
-                            <li>Monday-Friday </li>                            
-                            <li>Saturday-Sunday </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6 col-sm-6 col-xs-6 agile-opening">
-                        <ul>
-                            <li>8am-10pm</li>
-                            <li>9am-3pm</li>
-                            
-                        </ul>
-                    </div>
-                    <div class="clearfix"> </div>
-                </div>
-                @*<div class="col-md-6 w3-agile-footer-grid grid-w3-1">
-                    <div class="contact-block-left">
+                    <br />
+                    <div>
+                        <div class="logo-2">
+                            <h2>Opening Days<span></span></h2>
+                        </div>
+                        <div class="col-md-5 col-sm-5 col-xs-5 agile-opening">
+                            <ul>
+                                <li>Monday - Friday </li>
+                                <li>Saturday - Sunday </li>
+                                <li><span style="font-weight: bold;">Emergency</span>(Monday-Sunday) </li>
+                            </ul><br />
+                       </div>
+                        <div class="col-md-6 col-sm-6 col-xs-6 agile-opening">
+                            <ul>
+                                <li>8am - 10pm</li>
+                                <li>9am - 3pm</li>
+                                <li>24hrs</li>
 
-                        <input type="text" placeholder="Name" name="Name" required="">
+                            </ul>
+                        </div>
+                   </div>   
+                                           
+                    <div class="clearfix"> </div>
+                </div>                
+                    
+                
+                @*<//first column end>*@
+                <div class="col-md-6 col-sm-6 col-xs-6 w3-agile-footer-grid">
+                    @* <div class="col-md-6 w3-agile-footer-grid grid-w3-1">*@
+                    <div class="contact-block-left">
+                        <div style="margin-top:50px;">
+                            <h4><span style="font-weight: bold;color:#eb422a;">For Any Query Please Message To Us</span></h4></br>
+                            <input type="text" placeholder="Name" name="Name" required="">
                             <input type="email" class="email" placeholder="Email" name="Email" required="">
                             <textarea placeholder="Message" name="message" required=""></textarea>
                             <input type="submit" value="Send" />
+                        </div>
+
 
                     </div>
                     <div class="clearfix"> </div>
-                </div>*@
+                </div>
+
                 <div class="clearfix"> </div>
             </div>
-        </div>
+
+            </div>
         <!-- copyright -->
         <div class="copyright">
             <p>© 2018 Family Health Clinic . All Rights Reserved | Design by <a href="http://ravindermadra.com/"> RavinderMadara</a> </p>
         </div>
         <!-- //copyright -->
+
+       <div class="col-md-5 col-sm-5 col-xs-5 agile-opening">
+           <a href="@Url.Action("Login", "Account")">
+               <i class="fa fa-sign-in-alt fa-2x" aria-hidden="true"></i>
+               <span style="font-size:20px;">Admin Login</span>
+           </a>
+       </div>
+
     </div>
     <!-- //footer -->
     <!-- js-scripts -->
@@ -644,17 +662,22 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     <script src="../../Assets/js/jquery-ui.js"></script>
     <script>
         $(function () {
-            $("#datepicker,#datepicker1,#datepicker2,#datepicker3,#txtDob,#txtAppointmentDate").datepicker(
-                { dateFormat: 'dd-mm-yy' });
-
+            //$("#datepicker,#datepicker1,#datepicker2,#datepicker3,#txtDob,#txtAppointmentDate").datepicker(
+            //    { dateFormat: 'dd-mm-yy', changeYear: true, changeMonth: true});
+                        $("#txtDob").datepicker(
+                            { dateFormat: 'dd-mm-yy', yearRange: '1910:2019', changeYear: true, changeMonth: true});
+            
         });
-        var array = ["18-01-2019", "22-01-2019", "19-01-2019"]
+        var array = ["18-01-2019", "22-01-2019", "19-02-2019"]
 
         $("#txtAppointmentDate").datepicker({
+           
+            minDate: 0,
             beforeShowDay: function (date) {
                 var string = jQuery.datepicker.formatDate('dd-mm-yy', date);
                 return [array.indexOf(string) == -1]
-            }
+            },
+            dateFormat: 'dd-mm-yy'
         });
     </script>
     <!-- //Calendar -->
