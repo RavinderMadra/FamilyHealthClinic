@@ -83,6 +83,13 @@ namespace DemoService.HomeNamespace
             Mapper.Map(list, entities);
             return entities.ToList();
         }
-
+        public List<UnAvailableViewModel> GetUnAvailableDates()
+        {
+            List<UnAvailableViewModel> entities = new List<UnAvailableViewModel>();
+            
+            var list = _Context.UnAvailableDates.Where(x=>x.IsActive==true && x.FromDate>=DateTime.Now).ToList();
+            Mapper.Map(list, entities);
+            return entities.ToList();
+        }
     }
 }

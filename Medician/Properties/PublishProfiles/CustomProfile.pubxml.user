@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <_PublishTargetUrl>ftp://HealthClinic.somee.com/www.root</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AdminAsset/assets/extra-libs/calendar/calendar.css">
+      <publishTime>11/07/2018 09:08:29</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/css/dataTables.bootstrap.css">
+      <publishTime>11/07/2018 09:08:29</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/css/dataTables.bootstrap.min.css">
+      <publishTime>11/07/2018 09:08:29</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/css/dataTables.bootstrap4.css">
+      <publishTime>11/07/2018 09:08:29</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css">
+      <publishTime>11/07/2018 09:08:29</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/css/dataTables.foundation.css">
+      <publishTime>11/07/2018 09:08:29</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/css/dataTables.foundation.min.css">
+      <publishTime>11/07/2018 09:08:30</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/css/dataTables.jqueryui.css">
+      <publishTime>11/07/2018 09:08:30</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/css/dataTables.jqueryui.min.css">
+      <publishTime>11/07/2018 09:08:30</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/css/dataTables.semanticui.css">
+      <publishTime>11/07/2018 09:08:30</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/css/dataTables.semanticui.min.css">
+      <publishTime>11/07/2018 09:08:30</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/css/jquery.dataTables.css">
+      <publishTime>11/07/2018 09:08:30</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/css/jquery.dataTables.min.css">
+      <publishTime>11/07/2018 09:08:30</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/images/sort_asc.png">
+      <publishTime>11/07/2018 09:08:31</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/images/sort_asc_disabled.png">
+      <publishTime>11/07/2018 09:08:31</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/images/sort_both.png">
+      <publishTime>11/07/2018 09:08:31</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/images/sort_desc.png">
+      <publishTime>11/07/2018 09:08:32</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/images/sort_desc_disabled.png">
+      <publishTime>11/07/2018 09:08:32</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/js/dataTables.bootstrap.js">
+      <publishTime>11/07/2018 09:08:32</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/js/dataTables.bootstrap.min.js">
+      <publishTime>11/07/2018 09:08:32</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/js/dataTables.bootstrap4.js">
+      <publishTime>11/07/2018 09:08:32</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js">
+      <publishTime>11/07/2018 09:08:32</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/js/dataTables.foundation.js">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/js/dataTables.foundation.min.js">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/js/dataTables.jqueryui.js">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/js/dataTables.jqueryui.min.js">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/js/dataTables.semanticui.js">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/js/dataTables.semanticui.min.js">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/js/jquery.dataTables.js">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/DataTables-1.10.16/js/jquery.dataTables.min.js">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/datatables.css">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/datatables.js">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/datatables.min.css">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/DataTables/datatables.min.js">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/gritter/jquery.gritter.css">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/gritter/jquery.gritter.min.js">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/multicheck/datatable-checkbox-init.js">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/multicheck/jquery.multicheck.js">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/multicheck/multicheck.css">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/extra-libs/sparkline/sparkline.js">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/background/img4.jpg">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/background/img5.jpg">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/background/img6.jpg">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/big/auth-bg.jpg">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/big/img1.jpg">
+      <publishTime>11/07/2018 09:08:33</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/big/img2.jpg">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/big/img3.jpg">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/big/img4.jpg">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/big/img5.jpg">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/big/img6.jpg">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/big/Thumbs.db">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/custom-select.png">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/favicon.png">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/logo-icon.png">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/logo-text.png">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/logo.png">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/users/1-old.jpg">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/users/1.jpg">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/users/1.png">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/users/2.jpg">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/users/2.png">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/users/3.jpg">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/users/3.png">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/users/4.jpg">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/users/5.jpg">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/users/6.jpg">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/users/7.jpg">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/users/8.jpg">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/users/agent.jpg">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/users/agent2.jpg">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/users/d1.jpg">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/users/d2.jpg">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/users/d3.jpg">
+      <publishTime>11/07/2018 09:08:34</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/users/d4.jpg">
+      <publishTime>11/07/2018 09:08:35</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/users/d5.jpg">
+      <publishTime>11/07/2018 09:08:35</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/images/users/profile.png">
+      <publishTime>11/07/2018 09:08:35</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+      <publishTime>11/07/2018 09:08:35</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/css/bootstrap-datepicker.standalone.min.css">
+      <publishTime>11/07/2018 09:08:35</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css">
+      <publishTime>11/07/2018 09:08:35</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/css/bootstrap-datepicker3.standalone.min.css">
+      <publishTime>11/07/2018 09:08:35</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js">
+      <publishTime>11/07/2018 09:08:35</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker-en-CA.min.js">
+      <publishTime>11/07/2018 09:08:35</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ar-tn.min.js">
+      <publishTime>11/07/2018 09:08:35</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ar.min.js">
+      <publishTime>11/07/2018 09:08:35</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.az.min.js">
+      <publishTime>11/07/2018 09:08:36</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.bg.min.js">
+      <publishTime>11/07/2018 09:08:36</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.bn.min.js">
+      <publishTime>11/07/2018 09:08:36</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.br.min.js">
+      <publishTime>11/07/2018 09:08:36</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.bs.min.js">
+      <publishTime>11/07/2018 09:08:36</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ca.min.js">
+      <publishTime>11/07/2018 09:08:36</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.cs.min.js">
+      <publishTime>11/07/2018 09:08:36</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.cy.min.js">
+      <publishTime>11/07/2018 09:08:36</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.da.min.js">
+      <publishTime>11/07/2018 09:08:36</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.de.min.js">
+      <publishTime>11/07/2018 09:08:36</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.el.min.js">
+      <publishTime>11/07/2018 09:08:36</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.en-AU.min.js">
+      <publishTime>11/07/2018 09:08:36</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.en-CA.min.js">
+      <publishTime>11/07/2018 09:08:37</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.en-GB.min.js">
+      <publishTime>11/07/2018 09:08:37</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.en-IE.min.js">
+      <publishTime>11/07/2018 09:08:37</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.en-NZ.min.js">
+      <publishTime>11/07/2018 09:08:37</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.en-ZA.min.js">
+      <publishTime>11/07/2018 09:08:37</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.eo.min.js">
+      <publishTime>11/07/2018 09:08:37</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.es.min.js">
+      <publishTime>11/07/2018 09:08:37</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.et.min.js">
+      <publishTime>11/07/2018 09:08:37</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.eu.min.js">
+      <publishTime>11/07/2018 09:08:37</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fa.min.js">
+      <publishTime>11/07/2018 09:08:37</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fi.min.js">
+      <publishTime>11/07/2018 09:08:37</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fo.min.js">
+      <publishTime>11/07/2018 09:08:37</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fr-CH.min.js">
+      <publishTime>11/07/2018 09:08:37</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.fr.min.js">
+      <publishTime>11/07/2018 09:08:38</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.gl.min.js">
+      <publishTime>11/07/2018 09:08:38</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.he.min.js">
+      <publishTime>11/07/2018 09:08:38</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.hi.min.js">
+      <publishTime>11/07/2018 09:08:38</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.hr.min.js">
+      <publishTime>11/07/2018 09:08:38</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.hu.min.js">
+      <publishTime>11/07/2018 09:08:38</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.hy.min.js">
+      <publishTime>11/07/2018 09:08:38</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.id.min.js">
+      <publishTime>11/07/2018 09:08:38</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.is.min.js">
+      <publishTime>11/07/2018 09:08:38</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.it-CH.min.js">
+      <publishTime>11/07/2018 09:08:38</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.it.min.js">
+      <publishTime>11/07/2018 09:08:38</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ja.min.js">
+      <publishTime>11/07/2018 09:08:38</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ka.min.js">
+      <publishTime>11/07/2018 09:08:38</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.kh.min.js">
+      <publishTime>11/07/2018 09:08:38</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.kk.min.js">
+      <publishTime>11/07/2018 09:08:38</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.km.min.js">
+      <publishTime>11/07/2018 09:08:38</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ko.min.js">
+      <publishTime>11/07/2018 09:08:38</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.kr.min.js">
+      <publishTime>11/07/2018 09:08:39</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.lt.min.js">
+      <publishTime>11/07/2018 09:08:39</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.lv.min.js">
+      <publishTime>11/07/2018 09:08:39</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.me.min.js">
+      <publishTime>11/07/2018 09:08:39</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.mk.min.js">
+      <publishTime>11/07/2018 09:08:39</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.mn.min.js">
+      <publishTime>11/07/2018 09:08:39</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ms.min.js">
+      <publishTime>11/07/2018 09:08:39</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.nl-BE.min.js">
+      <publishTime>11/07/2018 09:08:39</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.nl.min.js">
+      <publishTime>11/07/2018 09:08:39</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.no.min.js">
+      <publishTime>11/07/2018 09:08:39</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.oc.min.js">
+      <publishTime>11/07/2018 09:08:39</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.pl.min.js">
+      <publishTime>11/07/2018 09:08:39</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.pt-BR.min.js">
+      <publishTime>11/07/2018 09:08:39</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.pt.min.js">
+      <publishTime>11/07/2018 09:08:40</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ro.min.js">
+      <publishTime>11/07/2018 09:08:40</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.rs-latin.min.js">
+      <publishTime>11/07/2018 09:08:40</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.rs.min.js">
+      <publishTime>11/07/2018 09:08:40</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ru.min.js">
+      <publishTime>11/07/2018 09:08:40</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.si.min.js">
+      <publishTime>11/07/2018 09:08:40</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sk.min.js">
+      <publishTime>11/07/2018 09:08:40</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sl.min.js">
+      <publishTime>11/07/2018 09:08:40</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sq.min.js">
+      <publishTime>11/07/2018 09:08:40</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sr-latin.min.js">
+      <publishTime>11/07/2018 09:08:40</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sr.min.js">
+      <publishTime>11/07/2018 09:08:40</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sv.min.js">
+      <publishTime>11/07/2018 09:08:40</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.sw.min.js">
+      <publishTime>11/07/2018 09:08:40</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.ta.min.js">
+      <publishTime>11/07/2018 09:08:40</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tg.min.js">
+      <publishTime>11/07/2018 09:08:41</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.th.min.js">
+      <publishTime>11/07/2018 09:08:41</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tk.min.js">
+      <publishTime>11/07/2018 09:08:41</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tr.min.js">
+      <publishTime>11/07/2018 09:08:41</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.uk.min.js">
+      <publishTime>11/07/2018 09:08:41</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.uz-cyrl.min.js">
+      <publishTime>11/07/2018 09:08:41</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.uz-latn.min.js">
+      <publishTime>11/07/2018 09:08:41</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.vi.min.js">
+      <publishTime>11/07/2018 09:08:41</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-CN.min.js">
+      <publishTime>11/07/2018 09:08:41</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap-datepicker/dist/locales/bootstrap-datepicker.zh-TW.min.js">
+      <publishTime>11/07/2018 09:08:41</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap/dist/css/bootstrap-grid.min.css">
+      <publishTime>11/07/2018 09:08:35</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap/dist/css/bootstrap-reboot.min.css">
+      <publishTime>11/07/2018 09:08:35</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap/dist/css/bootstrap.min.css">
+      <publishTime>11/07/2018 09:08:35</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js">
+      <publishTime>11/07/2018 09:08:35</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/bootstrap/dist/js/bootstrap.min.js">
+      <publishTime>11/07/2018 09:08:35</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/chart/chart.js">
+      <publishTime>11/07/2018 09:08:41</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/chart/excanvas.min.js">
+      <publishTime>11/07/2018 09:08:41</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/chart/jquery.flot.min.js">
+      <publishTime>11/07/2018 09:08:41</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/chart/jquery.flot.pie.min.js">
+      <publishTime>11/07/2018 09:08:41</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/chart/jquery.flot.resize.min.js">
+      <publishTime>11/07/2018 09:08:42</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/chart/jquery.peity.min.js">
+      <publishTime>11/07/2018 09:08:42</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/chart/jquery.ui.custom.js">
+      <publishTime>11/07/2018 09:08:42</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/chart/matrix.charts.js">
+      <publishTime>11/07/2018 09:08:42</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/chart/matrix.dashboard.js">
+      <publishTime>11/07/2018 09:08:42</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/chart/matrix.interface.js">
+      <publishTime>11/07/2018 09:08:42</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/chart/turning-series.js">
+      <publishTime>11/07/2018 09:08:42</publishTime>
+    </File>
+    <File Include="AdminAsset/assets/libs/datatables/license.txt">
+      <publishTime>11/07/2018 09:08:42</publishTime>
+    </File>
+    <File Include="ApplicationInsights.config">
+      <publishTime>10/18/2018 07:13:56</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>10/18/2018 07:12:41</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/18/2018 07:12:41</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>01/22/2019 06:13:15</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

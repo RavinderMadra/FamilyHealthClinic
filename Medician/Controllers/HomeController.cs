@@ -47,5 +47,12 @@ namespace Carisbrook.Controllers
             //    return Json("Unable to book  your appointment .Please try again later", JsonRequestBehavior.DenyGet);
 
         }
+        public JsonResult GetUnAVailableDates()
+        {
+            var res = homeService.GetUnAvailableDates();
+            //if (homeService.SaveAppointment(objAppointment))
+            return Json(res, JsonRequestBehavior.AllowGet);
+           
+        }
     }
 }

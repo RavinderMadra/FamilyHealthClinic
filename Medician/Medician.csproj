@@ -962,13 +962,6 @@
     <Content Include="Assets\images\customImage\medicalcheckup1.jpg" />
     <Content Include="Assets\images\fonts\fontawesome-webfont.svg" />
     <Content Include="Assets\images\fonts\fontello.svg" />
-    <Content Include="Assets\images\1.jpg" />
-    <Content Include="Assets\images\2.jpg" />
-    <Content Include="Assets\images\3.jpg" />
-    <Content Include="Assets\images\4.jpg" />
-    <Content Include="Assets\images\5.jpg" />
-    <Content Include="Assets\images\6.jpg" />
-    <Content Include="Assets\images\bg2.jpg" />
     <Content Include="Assets\images\c-arrows.png" />
     <Content Include="Assets\images\customImage\BloodDonation.jpeg" />
     <Content Include="Assets\images\customImage\cancercamp.jpg" />
@@ -984,29 +977,6 @@
     <Content Include="Assets\images\customImage\medicalcheckup.jpg" />
     <Content Include="Assets\images\customImage\medicalconsulted.jpg" />
     <Content Include="Assets\images\customImage\physiotherphist.jpg" />
-    <Content Include="Assets\images\g1.jpg" />
-    <Content Include="Assets\images\g2.jpg" />
-    <Content Include="Assets\images\g3.jpg" />
-    <Content Include="Assets\images\g4.jpg" />
-    <Content Include="Assets\images\g5.jpg" />
-    <Content Include="Assets\images\g6.jpg" />
-    <Content Include="Assets\images\g7.jpg" />
-    <Content Include="Assets\images\g8.jpg" />
-    <Content Include="Assets\images\g9.jpg" />
-    <Content Include="Assets\images\pri.png" />
-    <Content Include="Assets\images\s1.jpg" />
-    <Content Include="Assets\images\s2.jpg" />
-    <Content Include="Assets\images\s3.jpg" />
-    <Content Include="Assets\images\s4.jpg" />
-    <Content Include="Assets\images\s5.jpg" />
-    <Content Include="Assets\images\t1.jpg" />
-    <Content Include="Assets\images\t2.jpg" />
-    <Content Include="Assets\images\t3.jpg" />
-    <Content Include="Assets\images\t4.jpg" />
-    <Content Include="Assets\images\test1.jpg" />
-    <Content Include="Assets\images\test2.jpg" />
-    <Content Include="Assets\images\test3.jpg" />
-    <Content Include="Assets\images\up.png" />
     <Content Include="Assets\js\bootstrap.js" />
     <Content Include="Assets\js\easing.js" />
     <Content Include="Assets\js\jquery-2.1.4.min.js" />
@@ -1216,6 +1186,7 @@
     <Content Include="Assets\images\fonts\FontAwesome.otf" />
     <Content Include="Assets\images\fonts\fontello.eot" />
     <Content Include="Assets\images\fonts\fontello.ttf" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="Resources\EmailTemplates\AppointmentTemplate.html" />
     <Content Include="Resources\EmailTemplates\ContactUsTemplate.html" />
@@ -1564,8 +1535,6 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_Layout - Copy.cshtml" />
-    <Content Include="Views\Home\OurSchool.cshtml" />
-    <Content Include="Views\Home\MenuSection.cshtml" />
     <Content Include="Views\Admin\Index.cshtml" />
     <Content Include="Views\Shared\_AdminLayout.cshtml" />
     <Content Include="Views\Admin\AddWebsiteContent.cshtml" />
@@ -1595,6 +1564,8 @@
     <Content Include="Views\Admin\ManagePaitent.cshtml" />
     <Content Include="Views\Home\Album.cshtml" />
     <Content Include="Views\Admin\PatientDetail.cshtml" />
+    <Content Include="Views\Admin\AddUnAvailableDate.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

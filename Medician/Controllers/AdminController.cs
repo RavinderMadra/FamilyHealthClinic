@@ -6,6 +6,7 @@ using System.Web;
 using PagedList;
 using System.Web.Mvc;
 using DemoService.AdminNamespace;
+using DemoModel.ViewModel;
 
 namespace Carisbrook.Controllers
 {
@@ -48,6 +49,25 @@ namespace Carisbrook.Controllers
             return View();
 
                 
+        }
+        public ActionResult AddUnAvailableDate()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult AddUnAvailableDate(UnAvailableViewModel data)
+        {
+            if (adminService.SaveUnAvailableDate(data))
+            {
+                return RedirectToAction("ManageUnAvailableDate");
+            }
+            else {
+                 return View(); }
+            
+        }
+        public ActionResult ManageUnAvailableDate()
+        {
+            return View();
         }
     }
 }

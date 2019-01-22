@@ -86,6 +86,9 @@
     <Compile Include="EntityModel\Patient.cs">
       <DependentUpon>DataEntityModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="EntityModel\UnAvailableDate.cs">
+      <DependentUpon>DataEntityModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="EntityModel\User.cs">
       <DependentUpon>DataEntityModel.tt</DependentUpon>
     </Compile>

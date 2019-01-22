@@ -36,6 +36,7 @@ namespace DemoService.AdminNamespace
                 appointmentVM.AppointmentDate = x.table1.AppointmentDate;
                 appointmentVM.AppointmentTimeName = x.table3.Times ;
                 appointmentVM.AppointmentTime = (int)x.table3.Id;
+                appointmentVM.Id = (int)x.table1.Id;
                 lstAppointmentViewModel.Add(appointmentVM);
             }
             
@@ -61,6 +62,27 @@ namespace DemoService.AdminNamespace
             Mapper.Map(list, entities);
 
             return entities;
+        }
+        public bool SaveUnAvailableDate(UnAvailableViewModel data)
+        {
+            bool status = false;
+            try
+            {
+                UnAvailableDate unAvailableDate = new UnAvailableDate();
+                Mapper.Map(data, unAvailableDate);
+                unAvailableDate.CreatedOn = DateTime.Now;
+                unAvailableDate.IsActive = true;
+                _Context.UnAvailableDates.Add(unAvailableDate);
+                _Context.Configuration.ValidateOnSaveEnabled = true;
+                _Context.SaveChanges();
+                return status = true;
+            }
+            catch(Exception ex)
+            {
+                return status;
+            }
+           
+            
         }
     }
 }

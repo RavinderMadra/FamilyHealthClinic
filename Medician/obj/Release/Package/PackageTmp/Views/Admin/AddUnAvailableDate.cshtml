@@ -1,0 +1,143 @@
+﻿@model DemoModel.ViewModel.UnAvailableViewModel
+@{
+    ViewBag.Title = "ManageAvailableDate";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<script src="../../AdminAsset/assets/libs/jquery/dist/jquery.min.js"></script>
+<link href="~/AdminAsset/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.css" rel="stylesheet">
+
+<script src="~/AdminAsset/assets/libs/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+
+@*<script src="~/AdminAsset/dist/js/jquery-ui.min.js"></script>*@
+<div class="page-wrapper">
+    <!-- ============================================================== -->
+    <!-- Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <div class="page-breadcrumb">
+        <div class="row">
+            <div class="col-12 d-flex no-block align-items-center">
+                <h4 class="page-title">SetAvailable Date</h4>
+                <div class="ml-auto text-right">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Bread crumb and right sidebar toggle -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- Container fluid  -->
+    <!-- ============================================================== -->
+    <div class="container-fluid">
+        <!-- ============================================================== -->
+        <!-- Start Page Content -->
+        <!-- ============================================================== -->
+        <div class="row">
+            <div class="col-12">
+
+
+
+
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card">
+                            @using (Html.BeginForm("AddUnAvailableDate", "Admin", null, FormMethod.Post, new
+                            {
+                                @class = "form-horizontal m-t-20",
+                                role = "form",
+                                @id = "UnavailabelAppointmentform"
+                            }))
+                            {
+                                @Html.AntiForgeryToken()
+                                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                            <div class="card-body">
+                                <h4 class="card-title">Unavailable Date Info</h4>
+                                <label class="m-t-15">Reason</label>
+                                <div class="input-group">
+
+                                    @Html.TextBoxFor(m => m.Reason, new { @class = "form-control",
+                                   @placeholder = "Reason" ,@required= "required" })
+
+                                </div>
+                                <label class="m-t-15">From Date</label>
+                                <div class="input-group">
+                                    @Html.TextBoxFor(m => m.FromDate, new { @class = "form-control", @id = "FromDate",
+                                   @required = "required",@placeholder = "From Date mm/dd/yyyy" })
+
+                                    @*<input type="text" class="form-control" id="datepicker-autoclose" placeholder="mm/dd/yyyy">*@
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                    </div>
+                                </div>
+                                <label class="m-t-15">To Date</label>
+                                <div class="input-group">
+                                    @Html.TextBoxFor(m => m.ToDate, new { @class = "form-control",
+                                   @required = "required",@placeholder = "To Date mm/dd/yyyy" })
+
+                                    @*<input type="text" class="form-control" id="datepicker-autoclose" placeholder="mm/dd/yyyy">*@
+                                    <div class="input-group-append">
+                                        <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                                <div class="border-top">
+                                    <div class="card-body">
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- End PAge Content -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Right sidebar -->
+        <!-- ============================================================== -->
+        <!-- .right-sidebar -->
+        <!-- ============================================================== -->
+        <!-- End Right sidebar -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Container fluid  -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- footer -->
+    <!-- ============================================================== -->
+    <footer class="footer text-center">
+        All Rights Reserved by Matrix-admin. Designed and Developed by <a href="https:ravindermadra.com">Ravinder</a>.
+    </footer>
+    <!-- ============================================================== -->
+    <!-- End footer -->
+    <!-- ============================================================== -->
+</div>
+
+
+<script type="text/javascript">
+  
+        $('#FromDate').datepicker({
+            autoclose: true,
+            todayHighlight: true,
+            format: 'dd/mm/yy'
+        });
+        $('#ToDate').datepicker({
+            autoclose: true,
+            todayHighlight: true,
+            format: 'dd/mm/yy'
+        });
+   
+</script>

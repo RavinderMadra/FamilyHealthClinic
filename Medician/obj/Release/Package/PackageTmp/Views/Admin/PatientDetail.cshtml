@@ -1,0 +1,15 @@
+﻿@model List<DemoModel.ViewModel.AppointmentViewModel>
+@{
+    ViewBag.Title = "PatientDetail";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>PatientDetail</h2>
+
+Id:@ViewBag.list.Id;<br>
+Name:@ViewBag.list.Name;<br />
+DOB:@ViewBag.list.DateOfBirth;<br>
+Gender:@ViewBag.list.Gender;<br>
+Address:@ViewBag.list.Address;<br>
+Email:@ViewBag.list.Email;<br>
+Phone:@ViewBag.list.Phone;<br>

@@ -49,6 +49,8 @@ public partial class OnBoadTaskEntities : DbContext
 
     public virtual DbSet<AppointmentTime> AppointmentTimes { get; set; }
 
+    public virtual DbSet<UnAvailableDate> UnAvailableDates { get; set; }
+
 
     public virtual ObjectResult<GetAvailableAppointment_Result> GetAvailableAppointment(Nullable<System.DateTime> appointmentDate)
     {
