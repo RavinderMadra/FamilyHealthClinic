@@ -40,11 +40,6 @@
         <!-- ============================================================== -->
         <div class="row">
             <div class="col-12">
-
-
-
-
-
                 <div class="row">
                     <div class="col-md-8">
                         <div class="card">
@@ -62,14 +57,14 @@
                                 <label class="m-t-15">Reason</label>
                                 <div class="input-group">
 
-                                    @Html.TextBoxFor(m => m.Reason, new { @class = "form-control",
-                                   @placeholder = "Reason" ,@required= "required" })
+                                    @Html.TextBoxFor(m => m.Reason, new { @class = "form-control",@id="Reason",
+                                    @placeholder = "Reason" ,@required= "required" })
 
                                 </div>
                                 <label class="m-t-15">From Date</label>
                                 <div class="input-group">
                                     @Html.TextBoxFor(m => m.FromDate, new { @class = "form-control", @id = "FromDate",
-                                   @required = "required",@placeholder = "From Date mm/dd/yyyy" })
+                                    @required = "required",@placeholder = "From Date mm/dd/yyyy" })
 
                                     @*<input type="text" class="form-control" id="datepicker-autoclose" placeholder="mm/dd/yyyy">*@
                                     <div class="input-group-append">
@@ -78,8 +73,8 @@
                                 </div>
                                 <label class="m-t-15">To Date</label>
                                 <div class="input-group">
-                                    @Html.TextBoxFor(m => m.ToDate, new { @class = "form-control",
-                                   @required = "required",@placeholder = "To Date mm/dd/yyyy" })
+                                    @Html.TextBoxFor(m => m.ToDate, new { @class = "form-control", @id="ToDate",
+                                    @required = "required",@placeholder = "To Date mm/dd/yyyy" })
 
                                     @*<input type="text" class="form-control" id="datepicker-autoclose" placeholder="mm/dd/yyyy">*@
                                     <div class="input-group-append">
@@ -90,6 +85,7 @@
                                 <div class="border-top">
                                     <div class="card-body">
                                         <button type="submit" class="btn btn-primary">Submit</button>
+                                        <button type="button" class="btn btn-primary" id="btnUpdate" style="display:none;" onclick="Update();">Update</button>
                                     </div>
                                 </div>
                             }
@@ -128,16 +124,42 @@
 
 
 <script type="text/javascript">
-  
-        $('#FromDate').datepicker({
-            autoclose: true,
-            todayHighlight: true,
-            format: 'dd/mm/yy'
-        });
-        $('#ToDate').datepicker({
-            autoclose: true,
-            todayHighlight: true,
-            format: 'dd/mm/yy'
-        });
+
+    $('#FromDate').datepicker({
+        autoclose: true,
+        todayHighlight: true,
+        format: 'dd/mm/yy'
+    });
+    $('#ToDate').datepicker({
+        autoclose: true,
+        todayHighlight: true,
+        format: 'dd/mm/yy'
+    });
+
+    
+    function Update(ID) {
+        debugger;
+        var Obj = {
+            Id: $('#Id').val(),
+            Reason: $('#Reason').val(),
+            FromDate: $('#FromDate').val(),
+            ToDate: $('Todate').val()
+        };
+        $.ajax({
+            url: "/Admin/Update/" ,
+            typr: "Post",
+            contentType: "application/json;charset=UTF-8",
+            dataType: JSON.stringify(Obj),
+            success: function (result) {
+            ManageUnAvailableDate();
+
+            },
+            error: function (errormessage) {
+            alert(errormessage.responseText);
+             }
+    });
+
+ }
+
    
 </script>

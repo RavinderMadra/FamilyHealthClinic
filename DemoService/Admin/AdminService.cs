@@ -24,7 +24,7 @@ namespace DemoService.AdminNamespace
                             select new { table1 = a, table2 = p ,table3=t};
             foreach (var x in tableList)
             {
-                AppointmentViewModel appointmentVM = new AppointmentViewModel();
+               AppointmentViewModel appointmentVM = new AppointmentViewModel();                    
                 appointmentVM.Name = x.table2.Name;
                 appointmentVM.Phone = x.table2.Phone;
                 appointmentVM.Email = x.table2.Email;
@@ -84,5 +84,76 @@ namespace DemoService.AdminNamespace
            
             
         }
+
+        public List<UnAvailableViewModel> GetUnavailableDate()
+        {
+            List<UnAvailableViewModel> entities = new List<UnAvailableViewModel>();
+
+            var list = _Context.UnAvailableDates.Where(x => x.IsActive == true).ToList();
+
+            Mapper.Map(list, entities);
+
+            return entities.ToList();
+
+        }
+        
+        public UnAvailableViewModel GetUnAvailableDateRec(int Id)
+        {
+            UnAvailableDate rec = _Context.UnAvailableDates.Where(x => x.Id == Id).FirstOrDefault();
+            return Mapper.Map(rec, new UnAvailableViewModel());
+
+        }
+        public bool UpdateRec(UnAvailableViewModel unAvailableViewModel)
+        {
+            bool status = false;
+            try
+            {
+
+                var _unAvailableDateDetail = _Context.UnAvailableDates.Find(unAvailableViewModel.Id);
+
+                if (_unAvailableDateDetail != null)
+                {
+                    Mapper.Map(unAvailableViewModel, _unAvailableDateDetail);
+                    _unAvailableDateDetail.ModifiedOn = DateTime.Now;
+                    _Context.Configuration.ValidateOnSaveEnabled = false;
+                    _Context.SaveChanges();
+                    status = true;
+
+                }
+
+            }
+
+            catch (Exception ex)
+            {
+                //ex.Message;
+            }
+            
+            return status;
+        }
+
+        public bool Delete(long Id)
+        {
+            try
+            {
+                var entity = _Context.UnAvailableDates.Find(Id);
+                if (entity != null)
+                {
+                    entity.IsActive = false;
+                    _Context.Configuration.ValidateOnSaveEnabled = false;
+                    _Context.SaveChanges();
+                    return true;
+                }
+                else
+                    return false;
+            }
+
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+        }
+
+
     }
 }

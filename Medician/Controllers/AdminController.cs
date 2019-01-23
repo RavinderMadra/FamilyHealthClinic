@@ -62,12 +62,36 @@ namespace Carisbrook.Controllers
                 return RedirectToAction("ManageUnAvailableDate");
             }
             else {
-                 return View(); }
+                return View();
+            }
             
         }
         public ActionResult ManageUnAvailableDate()
         {
-            return View();
+            var list = adminService.GetUnavailableDate().ToList();
+            return View(list);
         }
+        [HttpGet]
+        public JsonResult GetbyID(int Id)
+        {
+            return Json(adminService.GetUnAvailableDateRec(Id),JsonRequestBehavior.AllowGet);
+        }
+        public JsonResult Update(UnAvailableViewModel obj)
+        {
+            if (adminService.UpdateRec(obj))
+            {
+                return Json(true, JsonRequestBehavior.AllowGet);
+            }
+            else
+            {
+                return Json(false, JsonRequestBehavior.DenyGet);
+            }
+
+        }
+        public JsonResult Delete(int ID)
+        {
+            return Json(adminService.Delete(ID), JsonRequestBehavior.AllowGet);
+        }
+
     }
 }
