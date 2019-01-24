@@ -70,9 +70,19 @@ namespace DemoService.AdminNamespace
             {
                 UnAvailableDate unAvailableDate = new UnAvailableDate();
                 Mapper.Map(data, unAvailableDate);
-                unAvailableDate.CreatedOn = DateTime.Now;
-                unAvailableDate.IsActive = true;
-                _Context.UnAvailableDates.Add(unAvailableDate);
+                if (data.Id==0)
+                {
+                    unAvailableDate.CreatedOn = DateTime.Now;
+                    unAvailableDate.IsActive = true;
+                    _Context.UnAvailableDates.Add(unAvailableDate);
+                }
+                else
+                {
+                   var res=  _Context.UnAvailableDates.Where(x=>x.Id==data.Id).FirstOrDefault();
+                    res.FromDate = data.FromDate;
+                    res.ToDate = data.ToDate;
+                    res.Reason = data.Reason;
+                }
                 _Context.Configuration.ValidateOnSaveEnabled = true;
                 _Context.SaveChanges();
                 return status = true;
@@ -82,7 +92,6 @@ namespace DemoService.AdminNamespace
                 return status;
             }
            
-            
         }
 
         public List<UnAvailableViewModel> GetUnavailableDate()
@@ -102,33 +111,6 @@ namespace DemoService.AdminNamespace
             UnAvailableDate rec = _Context.UnAvailableDates.Where(x => x.Id == Id).FirstOrDefault();
             return Mapper.Map(rec, new UnAvailableViewModel());
 
-        }
-        public bool UpdateRec(UnAvailableViewModel unAvailableViewModel)
-        {
-            bool status = false;
-            try
-            {
-
-                var _unAvailableDateDetail = _Context.UnAvailableDates.Find(unAvailableViewModel.Id);
-
-                if (_unAvailableDateDetail != null)
-                {
-                    Mapper.Map(unAvailableViewModel, _unAvailableDateDetail);
-                    _unAvailableDateDetail.ModifiedOn = DateTime.Now;
-                    _Context.Configuration.ValidateOnSaveEnabled = false;
-                    _Context.SaveChanges();
-                    status = true;
-
-                }
-
-            }
-
-            catch (Exception ex)
-            {
-                //ex.Message;
-            }
-            
-            return status;
         }
 
         public bool Delete(long Id)

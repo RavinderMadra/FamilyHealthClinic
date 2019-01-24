@@ -1186,8 +1186,7 @@
     <Content Include="Assets\images\fonts\FontAwesome.otf" />
     <Content Include="Assets\images\fonts\fontello.eot" />
     <Content Include="Assets\images\fonts\fontello.ttf" />
-    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
-    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\CarisBrook.pubxml" />
     <Content Include="Resources\EmailTemplates\AppointmentTemplate.html" />
     <Content Include="Resources\EmailTemplates\ContactUsTemplate.html" />
     <Content Include="Resources\EmailTemplates\NewsLetterSuscription.html" />
@@ -1565,8 +1564,10 @@
     <Content Include="Views\Home\Album.cshtml" />
     <Content Include="Views\Admin\PatientDetail.cshtml" />
     <Content Include="Views\Admin\AddUnAvailableDate.cshtml" />
-    <None Include="Properties\PublishProfiles\FolderProfile1.pubxml" />
     <Content Include="Views\Admin\ManageUnAvailableDate.cshtml" />
+    <None Include="Properties\PublishProfiles\MedicanFTP.pubxml" />
+    <None Include="Properties\PublishProfiles\MedicanLocal.pubxml" />
+    <Content Include="Views\Admin\_UnAvailableDateContent.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

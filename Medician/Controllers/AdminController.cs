@@ -50,9 +50,24 @@ namespace Carisbrook.Controllers
 
                 
         }
-        public ActionResult AddUnAvailableDate()
+        public ActionResult AddUnAvailableDate(int Id)
         {
-            return View();
+            UnAvailableViewModel objModel = new UnAvailableViewModel();
+            if (Id!=0)
+            {
+                var res = adminService.GetUnAvailableDateRec(Id);
+                objModel.Id = res.Id;
+                objModel.FromDate = res.FromDate;
+                objModel.Reason = res.Reason;
+                objModel.ToDate = res.ToDate;
+                return View(objModel);
+            }
+            else
+            {
+                return View();
+            }
+           
+            
         }
         [HttpPost]
         public ActionResult AddUnAvailableDate(UnAvailableViewModel data)
@@ -66,28 +81,15 @@ namespace Carisbrook.Controllers
             }
             
         }
-        public ActionResult ManageUnAvailableDate()
+        public ActionResult ManageUnAvailableDate( )
         {
+            
             var list = adminService.GetUnavailableDate().ToList();
+            //return PartialView("_UnAvailableDateContent", list); 
             return View(list);
+            
         }
-        [HttpGet]
-        public JsonResult GetbyID(int Id)
-        {
-            return Json(adminService.GetUnAvailableDateRec(Id),JsonRequestBehavior.AllowGet);
-        }
-        public JsonResult Update(UnAvailableViewModel obj)
-        {
-            if (adminService.UpdateRec(obj))
-            {
-                return Json(true, JsonRequestBehavior.AllowGet);
-            }
-            else
-            {
-                return Json(false, JsonRequestBehavior.DenyGet);
-            }
-
-        }
+       
         public JsonResult Delete(int ID)
         {
             return Json(adminService.Delete(ID), JsonRequestBehavior.AllowGet);
